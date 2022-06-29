@@ -1,0 +1,101 @@
+@import url(../Styles/variaveis.css);
+@import url(../Styles/text.css);
+
+/* --- Default --- */
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+body{
+    background-color: #F3F5F7;
+}
+
+/* --- Cabeçalho --- */
+header{
+    background-image: var(--linear);
+}
+@media only screen and (min-width: 768px){
+    #container-header {
+        max-width: 60%;
+        padding: 0;
+        margin: 0 auto !important;
+    }
+}
+@media only screen and (max-width:700px){
+    #container-header {
+        max-width: 95%;
+        padding: 0;
+        margin: 0 auto !important;
+    }
+}
+.title-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 1.5rem;
+}
+.search-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0 2.5rem 0;
+}
+input{
+    background-color: rgba(255, 255, 255, 0.548);
+    width: 100%;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    padding-left: 0.5rem;
+    color: var(--white)
+}
+input::-webkit-input-placeholder{
+    color: var(--white)
+}
+
+/* --- Conteudo --- */
+@media only screen and (min-width: 768px){
+    #container-body {
+        max-width: 60%;
+        padding: 0;
+        margin: 0 auto !important;
+    }
+    #container-body{
+        padding: 2rem 0 2rem 0;
+    }
+    .card{
+        background-color: var(--white);
+        padding: 2rem;
+        margin: 2rem;
+        border-radius: 10px;
+        box-shadow: -4px 8px 15px var(--text);
+    }
+}
+@media only screen and (max-width:700px){
+    #container-body {
+        max-width: 95%;
+        padding: 0;
+        margin: 0 auto !important;
+    }
+    .card{
+        background-color: var(--white);
+        padding: 1.5rem 1rem;
+        margin: 2rem 0;
+        border-radius: 10px;
+        box-shadow: -1px 1px 10px var(--text);
+    }
+}
+.sub-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --- Rodapé --- */
+#end{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+
+    background: var(--linear);
+}
